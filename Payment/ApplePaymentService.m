@@ -1,17 +1,18 @@
 //
-//  AmazonPaymentService.m
+//  ApplePaymentService.m
 //  Payment
 //
 //  Created by Yuki Tsukada on 2021/03/04.
 //
 
-#import "AmazonPaymentService.h"
+#import "ApplePaymentService.h"
 
-@implementation AmazonPaymentService
+@implementation ApplePaymentService
 
-- (void)processPaymentAmount:(NSInteger)amount {
+
+- (void)processPaymentAmount:(NSInteger)amount { 
     if (self.canProcessPayment) {
-        NSLog(@"Amazon payments processed amount $ %d", (int)amount);
+        NSLog(@"Apple payments processed amount $ %d", (int)amount);
     } else {
         NSLog(@"The payment cannot be processed. Sorry.");
     }
@@ -25,6 +26,5 @@
         return YES;
     }
 }
-
 
 @end

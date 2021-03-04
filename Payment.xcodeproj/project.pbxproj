@@ -13,6 +13,7 @@
 		619848E525F117FD001C5149 /* PaypalPaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = 619848E425F117FD001C5149 /* PaypalPaymentService.m */; };
 		619848E925F1180F001C5149 /* StripePaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = 619848E825F1180F001C5149 /* StripePaymentService.m */; };
 		619848ED25F11823001C5149 /* AmazonPaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = 619848EC25F11823001C5149 /* AmazonPaymentService.m */; };
+		619848F225F12C55001C5149 /* ApplePaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = 619848F125F12C55001C5149 /* ApplePaymentService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +41,8 @@
 		619848E825F1180F001C5149 /* StripePaymentService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StripePaymentService.m; sourceTree = "<group>"; };
 		619848EB25F11823001C5149 /* AmazonPaymentService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmazonPaymentService.h; sourceTree = "<group>"; };
 		619848EC25F11823001C5149 /* AmazonPaymentService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmazonPaymentService.m; sourceTree = "<group>"; };
+		619848F025F12C55001C5149 /* ApplePaymentService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplePaymentService.h; sourceTree = "<group>"; };
+		619848F125F12C55001C5149 /* ApplePaymentService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplePaymentService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 				619848E825F1180F001C5149 /* StripePaymentService.m */,
 				619848EB25F11823001C5149 /* AmazonPaymentService.h */,
 				619848EC25F11823001C5149 /* AmazonPaymentService.m */,
+				619848F025F12C55001C5149 /* ApplePaymentService.h */,
+				619848F125F12C55001C5149 /* ApplePaymentService.m */,
 			);
 			path = Payment;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 				619848ED25F11823001C5149 /* AmazonPaymentService.m in Sources */,
 				619848E925F1180F001C5149 /* StripePaymentService.m in Sources */,
 				619848E125F115BC001C5149 /* PaymentGateway.m in Sources */,
+				619848F225F12C55001C5149 /* ApplePaymentService.m in Sources */,
 				619848D325F10FB6001C5149 /* main.m in Sources */,
 				619848DD25F11012001C5149 /* InputHandler.m in Sources */,
 				619848E525F117FD001C5149 /* PaypalPaymentService.m in Sources */,
