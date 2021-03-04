@@ -17,7 +17,7 @@ int main(int argc, const char * argv[]) {
         InputHandler *newInputHandler = [[InputHandler alloc] init];
         
         NSInteger randomDoller = arc4random_uniform(901) + 100; // 100~1000
-        NSString *userInputForPayment = [newInputHandler getUserInput:@"Thank you for shopping at Acme.com Your total today is $xxx Please select your payment method: 1: Paypal, 2: Stripe, 3: Amazon"];
+        NSString *userInputForPayment = [newInputHandler getUserInput:[NSString stringWithFormat:@"\nThank you for shopping at Acme.com \nYour total today is $ %d \nPlease select your payment method: \n1: Paypal, 2: Stripe, 3: Amazon", (int)randomDoller]];
         int paymentChoice = 0;
         BOOL duringInput = YES;
         while (duringInput) {
@@ -28,6 +28,7 @@ int main(int argc, const char * argv[]) {
                 NSLog(@"Invalid input. Please try again.");
             }
         }
+        NSLog(@"input %d", paymentChoice);
         PaymentGateway *newPaymentGateway = [[PaymentGateway alloc] init];
         
         
