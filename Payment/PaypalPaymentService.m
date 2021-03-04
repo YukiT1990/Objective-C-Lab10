@@ -10,7 +10,7 @@
 @implementation PaypalPaymentService
 
 - (void)processPaymentAmount:(NSInteger)amount {
-    NSLog(@"Process payment with Paypal.");
+    NSLog(@"Process $ %d payment with Paypal.", (int)amount);
 }
 
 @end

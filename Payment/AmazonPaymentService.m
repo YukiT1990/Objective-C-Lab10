@@ -10,7 +10,7 @@
 @implementation AmazonPaymentService
 
 - (void)processPaymentAmount:(NSInteger)amount {
-    NSLog(@"Process payment with Amazon payments.");
+    NSLog(@"Process $ %d payment with Amazon payments.", (int)amount);
 }
 
 @end

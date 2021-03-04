@@ -8,6 +8,9 @@
 #import <Foundation/Foundation.h>
 #import "InputHandler.h"
 #import "PaymentGateway.h"
+#import "PaypalPaymentService.h"
+#import "StripePaymentService.h"
+#import "AmazonPaymentService.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -26,6 +29,25 @@ int main(int argc, const char * argv[]) {
             }
         }
         PaymentGateway *newPaymentGateway = [[PaymentGateway alloc] init];
+        
+        
+        PaypalPaymentService *paypalPaymentService = [PaypalPaymentService new];
+        StripePaymentService *stripePaymentService = [StripePaymentService new];
+        AmazonPaymentService *amazonPaymentService = [AmazonPaymentService new];
+        switch (paymentChoice) {
+            case 1:
+                newPaymentGateway.delegate = paypalPaymentService;
+                break;
+            case 2:
+                newPaymentGateway.delegate = stripePaymentService;
+                break;
+            case 3:
+                newPaymentGateway.delegate = amazonPaymentService;
+                break;
+            default:
+                NSLog(@"Delegate error");
+                break;
+        }
         [newPaymentGateway processPaymentAmount:randomDoller];
         
         
