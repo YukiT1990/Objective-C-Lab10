@@ -9,4 +9,8 @@
 
 @implementation PaypalPaymentService
 
+- (void)processPaymentAmount:(NSInteger)amount {
+    NSLog(@"Process payment with Paypal.");
+}
+
 @end
