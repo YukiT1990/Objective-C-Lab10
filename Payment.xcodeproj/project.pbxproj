@@ -73,10 +73,10 @@
 			isa = PBXGroup;
 			children = (
 				619848D225F10FB6001C5149 /* main.m */,
-				619848DF25F115BC001C5149 /* PaymentGateway.h */,
-				619848E025F115BC001C5149 /* PaymentGateway.m */,
 				619848DC25F11012001C5149 /* InputHandler.h */,
 				619848DB25F11012001C5149 /* InputHandler.m */,
+				619848DF25F115BC001C5149 /* PaymentGateway.h */,
+				619848E025F115BC001C5149 /* PaymentGateway.m */,
 				619848E325F117FD001C5149 /* PaypalPaymentService.h */,
 				619848E425F117FD001C5149 /* PaypalPaymentService.m */,
 				619848E725F1180F001C5149 /* StripePaymentService.h */,
