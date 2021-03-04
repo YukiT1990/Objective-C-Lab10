@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		619848D325F10FB6001C5149 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 619848D225F10FB6001C5149 /* main.m */; };
 		619848DD25F11012001C5149 /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 619848DB25F11012001C5149 /* InputHandler.m */; };
+		619848E125F115BC001C5149 /* PaymentGateway.m in Sources */ = {isa = PBXBuildFile; fileRef = 619848E025F115BC001C5149 /* PaymentGateway.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		619848D225F10FB6001C5149 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		619848DB25F11012001C5149 /* InputHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
 		619848DC25F11012001C5149 /* InputHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputHandler.h; sourceTree = "<group>"; };
+		619848DF25F115BC001C5149 /* PaymentGateway.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaymentGateway.h; sourceTree = "<group>"; };
+		619848E025F115BC001C5149 /* PaymentGateway.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaymentGateway.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				619848D225F10FB6001C5149 /* main.m */,
+				619848DF25F115BC001C5149 /* PaymentGateway.h */,
+				619848E025F115BC001C5149 /* PaymentGateway.m */,
 				619848DC25F11012001C5149 /* InputHandler.h */,
 				619848DB25F11012001C5149 /* InputHandler.m */,
 			);
@@ -123,6 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				619848E125F115BC001C5149 /* PaymentGateway.m in Sources */,
 				619848D325F10FB6001C5149 /* main.m in Sources */,
 				619848DD25F11012001C5149 /* InputHandler.m in Sources */,
 			);
